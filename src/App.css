@@ -1,0 +1,125 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.light-mode,
+.dark-mode,
+.light-mode-background,
+.dark-mode-background,
+.dark-mode-text,
+.light-mode-text {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.light-mode {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+}
+
+.light-mode-background {
+  background-color: #36363646;
+  color: black;
+  border-radius: 15px;
+  width: auto;
+  min-width: 370px;
+  height: auto;
+  min-height: 50px;
+}
+
+.light-mode-backgroundCol {
+  background-color: #36363646;
+  color: black;
+  border-radius: 15px;
+}
+
+.light-mode-text {
+  color: #0e5fa1;
+  font-weight: bold;
+}
+
+.dark-mode {
+  color: #ffffff;
+  background-color: #242424;
+}
+
+.dark-mode-text {
+  color: gold;
+  font-weight: bold;
+}
+
+.dark-mode-background {
+  background-color: #363636;
+  color: white;
+  border-radius: 15px;
+  width: auto;
+  min-width: 370px;
+  height: auto;
+  min-height: 50px;
+}
+
+.dark-mode-backgroundCol {
+  background-color: #363636;
+  color: white;
+  border-radius: 15px;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/* kael icon spin */
+.coin {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: rotate_4001510 7s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.coin .side,
+.coin:before,
+.coin:after {
+  content: '';
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  border-radius: 50%;
+  right: -0.4em;
+  line-height: 1;
+  transform: rotateY(-90deg);
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.coin .tails,
+.coin:after {
+  left: -0.4em;
+  transform: rotateY(90deg);
+}
+
+.coin:before,
+.coin:after {
+  background: linear-gradient(#faa504, #141001);
+  backface-visibility: hidden;
+  transform: rotateY(90deg);
+}
+
+.coin:after {
+  transform: rotateY(-90deg);
+}
+
+@keyframes rotate_4001510 {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
