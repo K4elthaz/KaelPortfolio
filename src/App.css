@@ -18,8 +18,26 @@ body {
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+.buttonScale{
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttonScale:hover {
+  transform: scale(1.1);
+}
+
+.navScale{
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navScale:hover {
+  transform: translate(50px, 5%);
+}
+
+
 .light-mode {
-  color: rgba(0, 0, 0, 0.87);
+  color: #000000de;
   background-color: rgb(255, 255, 255);
 }
 
@@ -44,9 +62,19 @@ body {
   font-weight: bold;
 }
 
+.light-mode-canvas{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
 .dark-mode {
   color: #ffffff;
   background-color: #242424;
+}
+
+.dark-mode-canvas{
+  background-color: #4b4a4a;
+  color: #ffffff;
 }
 
 .dark-mode-text {
@@ -122,4 +150,24 @@ body {
   100% {
     transform: rotateY(360deg);
   }
+}
+
+@keyframes bounceOut {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce-out-element {
+  transition: opacity 0.3s ease;
+}
+
+.bounce-out-element:hover {
+  animation: bounceOut 0.8s ease forwards;
 }
