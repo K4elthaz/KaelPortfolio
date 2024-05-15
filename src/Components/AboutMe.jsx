@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import BG from '../assets/bg.jpg'
 import Bulldoger from '../assets/DoggerMan.png'
 
 function AboutMe({ isDarkMode }) {
