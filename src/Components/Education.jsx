@@ -63,11 +63,9 @@ function Education({ isDarkMode }) {
                 />
               </Col>
               <Col xs={12} md={8} className="text-center text-md-start">
-                <p className="mt-3 mt-md-5 mb-1">
-                  Bachelor of Science in Computer Science
-                </p>
-                <p className="mb-1">Collegio de San Juan de Letran Calamba</p>
-                <small>August 2019 - July 2023</small>
+                <p className="mt-3 mt-md-5 mb-1">Computer System Services</p>
+                <p className="mb-1">Trace College</p>
+                <small>July 2017 - July 2019</small>
               </Col>
             </Row>
           </div>
