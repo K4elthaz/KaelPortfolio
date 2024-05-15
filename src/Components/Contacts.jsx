@@ -4,6 +4,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 function Contacts({ isDarkMode }) {
   return (
     <Container fluid style={{ minHeight: '40vh' }}>
+      <hr></hr>
       <div className="mt-5">
         <h1>
           Contacts
