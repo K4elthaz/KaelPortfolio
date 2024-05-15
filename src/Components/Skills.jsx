@@ -27,6 +27,9 @@ function Skills({ isDarkMode }) {
     { src: 'https://img.icons8.com/dusk/48/php-logo.png', name: 'PHP' },
     { src: 'https://img.icons8.com/color/48/000000/django.png', name: 'Django' },
     { src: 'https://img.icons8.com/nolan/48/express-js.png', name: 'Express' },
+    { src: 'https://img.icons8.com/fluency/48/filmora.png', name: 'Filmora' },
+    { src: 'https://img.icons8.com/fluency/48/canva.png', name: 'Canva' },
+
   ];
 
   const rows = [];
@@ -35,7 +38,7 @@ function Skills({ isDarkMode }) {
   }
 
   return (
-    <Container fluid style={{ minHeight: '100vh' }}>
+    <Container fluid style={{ minHeight: '85vh' }}>
       <div style={{userSelect: 'none'}}>
         <h1>
           Skills
