@@ -9,6 +9,10 @@ import Kael from '../assets/kael.png'
 import OffCanvasMenu from '../Components/OffCanvasMenu'
 import AboutMe from '../Components/AboutMe'
 import Skills from '../Components/Skills'
+import Work from '../Components/Work'
+import Projects from '../Components/Projects'
+import Education from '../Components/Education'
+import Contacts from '../Components/Contacts'
 
 function Home({ isDarkMode, toggleMode }) {
   // const [isDarkMode, setIsDarkMode] = useState(true)
@@ -41,7 +45,7 @@ function Home({ isDarkMode, toggleMode }) {
               />
             </Col>
 
-            <Col className="d-flex justify-content-center">
+            <Col className="d-flex justify-content-end">
               {isDarkMode ? (
                 <LightModeIcon
                   style={{ cursor: 'pointer' }}
@@ -57,7 +61,7 @@ function Home({ isDarkMode, toggleMode }) {
               )}
             </Col>
 
-            <Col className="d-flex justify-content-end">
+            {/* <Col className="d-flex justify-content-end">
               {!isMenuOpen ? (
                 <LunchDiningIcon
                   style={{ cursor: 'pointer' }}
@@ -71,19 +75,35 @@ function Home({ isDarkMode, toggleMode }) {
                   onClick={toggleMenu}
                 />
               )}
-            </Col>
+            </Col> */}
           </Row>
         </div>
         <div>
           <TitleHeader isDarkMode={isDarkMode} />
         </div>
       </div>
-      <div>
+      <div style={{userSelect:"none"}}>
         <AboutMe isDarkMode={isDarkMode} />
       </div>
 
       <div>
         <Skills isDarkMode={isDarkMode} />
+      </div>
+
+      <div style={{userSelect:"none"}}>
+        <Work isDarkMode={isDarkMode} />
+      </div>
+
+      <div className=''>
+        <Projects isDarkMode={isDarkMode} />
+      </div>
+
+      <div style={{userSelect:"none"}}>
+        <Education isDarkMode={isDarkMode} />
+      </div>
+
+      <div style={{userSelect:"none"}}>
+        <Contacts isDarkMode={isDarkMode} />
       </div>
     </Container>
   )
